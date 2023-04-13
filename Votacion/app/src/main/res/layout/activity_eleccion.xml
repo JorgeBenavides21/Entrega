@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eleccion">
+
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:text="Para continuar con el proceso, por favor ingrese el nombre del estudiante"
+        android:textAlignment="center"
+        android:textColor="#040303"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/et2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="78dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv5"
+        app:layout_constraintTop_toTopOf="@+id/tv5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="23dp"
+        android:text="Nota 2:"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv7"
+        app:layout_constraintEnd_toStartOf="@+id/et4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="21dp"
+        android:text="Nota 1:"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv6"
+        app:layout_constraintEnd_toStartOf="@+id/et3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv10" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="325dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:text="Ingrese las notas del estudiante:"
+        android:textAlignment="center"
+        android:textColor="#040303"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv5"
+        app:layout_constraintEnd_toStartOf="@+id/et3"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/et3"
+        app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="128dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/et6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv6"
+        app:layout_constraintTop_toTopOf="@+id/tv10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et5"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/et6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv7"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn3final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:text="Calcular"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv8"
+        app:layout_constraintStart_toEndOf="@+id/tv8"
+        app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="16dp"
+        android:text="Nota 3:"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv8"
+        app:layout_constraintEnd_toStartOf="@+id/et5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv4"
+        app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="78dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv8"
+        app:layout_constraintTop_toTopOf="@+id/tv8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="33dp"
+        android:text="Nota 4:"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn3final"
+        app:layout_constraintEnd_toStartOf="@+id/et6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:text="Estudiante:"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et2"
+        app:layout_constraintEnd_toStartOf="@+id/et2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="Continuar"
+        app:layout_constraintBottom_toTopOf="@+id/tv10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
